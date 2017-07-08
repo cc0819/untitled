@@ -6,6 +6,8 @@
 import math
 import random
 
+import time
+
 num=[];
 i=2
 for i in range(2,100):
@@ -35,4 +37,11 @@ tup1 = (50,12,18,39,89)
 tup2 = (50,56,30)
 
 print("tuple:",tup1)
+
+
+localtime = time.strftime("%y-%m-%d %H:%M:%S",time.localtime())
+
+print("本地时间为：",localtime)
+
+
 
