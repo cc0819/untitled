@@ -57,3 +57,4 @@ def goadd(x):
 
 
 print("存在的可能数是：",goadd(5))
+print("存在的可能数是：11111")
