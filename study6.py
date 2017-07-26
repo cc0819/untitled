@@ -19,8 +19,8 @@ def oneMethod():
 
 def twoMethod():
     # 抓取数据
-    # url = "https://movie.douban.com/j/chart/top_list?type=5&interval_id=50%3A40&action=&start=0&limit=1"
-    url = "http://www.cnblogs.com/jtjds/p/5326200.html"
+    url = "http://www.missevan.com/"
+    # url = "http://www.cnblogs.com/jtjds/p/5326200.html"
     request = urllib.request.Request(url)
     response = urllib.request.urlopen(request)
     data = response.read()\
@@ -30,9 +30,21 @@ def twoMethod():
     print(tempData)
 
 
+def threeMrthod():
+    url = "https://movie.douban.com/j/chart/top_list?type=5&interval_id=50%3A40&action=&start=0&limit=1"
+    request = urllib.request.Request(url)
+    request.add_header("User-Agent","Mozilla/5.0")
+    response = urllib.request.urlopen(request)
+    data = response.read()
+    response.close()
+    print(data)
+
+
+
 def main():
-    # oneMethod()
-    twoMethod()
+    # oneMethod() #基本方法
+    twoMethod() #使用urllib抓取
+    # threeMrthod() #构建request添加header抓取
 
 
 if __name__ == '__main__':
