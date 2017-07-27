@@ -70,16 +70,8 @@ for t in threads:
 print("Exiting Main Thread")
 
 
-a = ["a", "b", "c"]
-a.reverse()
-print("---111--",a)
-b = a
-print("---2222---",b)
-b.reverse()
-print("---33333a---",a)
-print("---33333b---",b)
 
-
-    
-
+for i in range(10):
+    print("-----=",i)
+    i += 1
 
