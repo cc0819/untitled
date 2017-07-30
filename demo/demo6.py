@@ -4,7 +4,7 @@
 # @Author  : C.C
 # @File    : demo6.py
 
-# 题目：斐波那契数列。
+# 题目：斐波那契数列。1、1、2、3、5......
 
 def fibo(num):
     if num == 1 or num == 2:
@@ -12,4 +12,4 @@ def fibo(num):
     return  fibo(num-1) + fibo(num -2)
 
 
-print(fibo(8))
+print(fibo(3))
