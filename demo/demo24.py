@@ -8,3 +8,11 @@
 # 求出这个数列的前20项之和。
 
 
+total = 0
+a, b = 2, 1
+
+for i in range(1, 21):
+    total += a / b
+    a, b = a + b, a
+
+print("前20项的之和是：%s" % total)
