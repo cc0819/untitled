@@ -8,11 +8,11 @@
 
 # 冒泡排序
 if __name__ == '__main__':
-    number = [3,1,60,24,21,27,30,50,78,11]
+    number = [3,1,60,24,21,27,30,50,78,11] #10个数
 
-    for i in range(0,len(number)):
-        for j in range(i + 1,len(number)):
-            if number[i] > number[j]:
-                number[i], number[j] = number[j], number[i]
+    for i in range(len(number) - 1):
+        for j in range(len(number) - i - 1):
+            if number[j] > number[j + 1]:
+                number[j], number[j + 1] = number[j + 1], number[j]
 
     print("排序后为%s" %number)
