@@ -9,15 +9,42 @@
 # 第二只猴子把剩下的桃子又平均分成五份，又多了一个，它同样把多的一个扔入海中，拿走了一份，
 # 第三、第四、第五只猴子都是这样做的，问海滩上原来最少有多少个桃子？
 
+# def monkey(num):
+#     point = 1
+#     total = 0
+#     while True:
+#         data = []
+#         for index in range(0, num):
+#             if index == 0:
+#                 total = 4 * point
+#             else:
+#                 total = total * 5 // 4 + 1
+#             data.append(total)
+#         point += 1
+#         if total % 4 == 0:
+#             print(data)
+#             break
+
+
+
+
 
 def monkey(param):
-    if param == 5:
-        return 6
-    else:
-        return monkey(param + 1)
-
-
+    i = 0
+    j = 1
+    x = 0
+    while (i < param):
+        x = 4 * j
+        for i in range(0, param):
+            if (x % 4 != 0):
+                break
+            else:
+                i += 1
+            x = (x // 4) * 5 + 1
+        j += 1
+    print(x)
 
 
 if __name__ == '__main__':
-    print(monkey(5))
+    monkey(5)
+    # print(monkey(5))

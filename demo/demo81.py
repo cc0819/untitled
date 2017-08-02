@@ -10,15 +10,15 @@
 import random
 
 if __name__ == '__main__':
-    secret = random.randint(1, 11)
-    guess = int(input("请输入一个正整数:"))
-
-    while guess != secret:
-        guess = int(input("请再输入一个正整数:"))
-        if guess == secret:
-            break
-
-    print("恭喜你猜对了")
+    # secret = random.randint(1, 11)
+    # guess = int(input("请输入一个正整数:"))
+    #
+    # while guess != secret:
+    #     guess = int(input("请再输入一个正整数:"))
+    #     if guess == secret:
+    #         break
+    #
+    # print("恭喜你猜对了")
 
     a = 809
     for i in range(10, 100):
