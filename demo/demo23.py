@@ -12,10 +12,10 @@
 #  *****
 #   ***
 #    *
+import unittest
 from sys import stdout
 
 number = int(input("请输入大于1的要打印的雪花数："))
-
 
 
 def pr(num):
@@ -35,3 +35,4 @@ def pr(num):
 
 
 pr(number)
+

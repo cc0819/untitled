@@ -6,6 +6,7 @@
 
 # 题目：斐波那契数列。1、1、2、3、5......
 
+
 def fibo(num):
     if num == 1 or num == 2:
         return 1
